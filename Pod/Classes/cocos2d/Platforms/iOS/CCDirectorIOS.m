@@ -450,7 +450,7 @@ GLToClipTransform(kmMat4 *transformOut)
 -(void) viewWillAppear:(BOOL)animated
 {
 	[super viewWillAppear:animated];
-	[self startAnimation];
+//	[self startAnimation];
 }
 
 -(void) viewDidAppear:(BOOL)animated
@@ -468,7 +468,7 @@ GLToClipTransform(kmMat4 *transformOut)
 
 -(void) viewDidDisappear:(BOOL)animated
 {
-	[self stopAnimation];
+//	[self stopAnimation];
 
 	[super viewDidDisappear:animated];
 }
@@ -567,7 +567,7 @@ GLToClipTransform(kmMat4 *transformOut)
 
 #else
 	// setup DisplayLink in main thread
-	[_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+	[_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
 #endif
 
     _isAnimating = YES;
