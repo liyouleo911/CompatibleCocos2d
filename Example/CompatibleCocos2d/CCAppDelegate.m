@@ -7,12 +7,16 @@
 //
 
 #import "CCAppDelegate.h"
+#import "CCViewController.h"
 
 @implementation CCAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    CCViewController *tabbarController = [[CCViewController alloc] init];
+    [self.window setRootViewController:tabbarController];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

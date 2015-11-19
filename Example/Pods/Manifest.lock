@@ -1,0 +1,14 @@
+PODS:
+  - CompatibleCocos2d (0.1.0)
+
+DEPENDENCIES:
+  - CompatibleCocos2d (from `../`)
+
+EXTERNAL SOURCES:
+  CompatibleCocos2d:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CompatibleCocos2d: dfa02e70682b199eb6a70d9ee488ae0d4729e551
+
+COCOAPODS: 0.38.2
