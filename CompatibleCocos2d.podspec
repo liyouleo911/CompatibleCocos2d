@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = "A compatible verison of Cocos2d v2.1 for arm64"
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/CompatibleCocos2d"
+  s.homepage         = "https://github.com/liyouleo911/CompatibleCocos2d"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "liyou" => "liyouleo911@msn.com" }
