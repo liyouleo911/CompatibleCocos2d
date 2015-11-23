@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CompatibleCocos2d"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A compatible verison of Cocos2d v2.1"
 
 # This description is used to generate tags and improve search results.
