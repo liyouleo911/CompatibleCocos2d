@@ -28,29 +28,11 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.requires_arc = false
 
-  #s.source_files = 'Pod/Classes/**/*'
-  #s.header_mappings_dir = 'Pod/Classes/kazmath/include'
+  s.source_files = 'Pod/Classes/**/*'
+  s.header_mappings_dir = 'Pod/Classes/kazmath/include'
   #s.resource_bundles = {
   #  'CompatibleCocos2d' => ['Pod/Assets/*.png']
   #}
-
-  s.subspec 'kazmath' do |ss|
-    ss.source_files = 'Pod/Classes/kazmath/**/*'
-    ss.header_mappings_dir = 'Pod/Classes/kazmath/include'
-    ss.private_header_files = 'Pod/Classes/kazmath/include/**/*.h'
-  end
-
-  s.subspec 'cocos2d' do |ss|
-    ss.source_files = 'Pod/Classes/cocos2d/**/*'
-    ss.public_header_files = 'Pod/Classes/cocos2d/**/*.h'
-    ss.dependency 'CompatibleCocos2d/kazmath'
-  end
-
-  s.subspec 'CocosDenshion' do |ss|
-    ss.source_files = 'Pod/Classes/CocosDenshion/*'
-    ss.private_header_files = 'Pod/Classes/CocosDenshion/*.h'
-    ss.dependency 'CompatibleCocos2d/cocos2d'
-  end
 
   s.library   = 'z'
   # s.public_header_files = 'Pod/Classes/**/*.h'
