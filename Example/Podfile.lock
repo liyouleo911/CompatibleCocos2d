@@ -1,5 +1,13 @@
 PODS:
-  - CompatibleCocos2d (0.1.1)
+  - CompatibleCocos2d (0.1.2):
+    - CompatibleCocos2d/cocos2d (= 0.1.2)
+    - CompatibleCocos2d/CocosDenshion (= 0.1.2)
+    - CompatibleCocos2d/kazmath (= 0.1.2)
+  - CompatibleCocos2d/cocos2d (0.1.2):
+    - CompatibleCocos2d/kazmath
+  - CompatibleCocos2d/CocosDenshion (0.1.2):
+    - CompatibleCocos2d/cocos2d
+  - CompatibleCocos2d/kazmath (0.1.2)
 
 DEPENDENCIES:
   - CompatibleCocos2d (from `../`)
@@ -9,6 +17,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CompatibleCocos2d: 5589c4ff114346cf3dbfa65e4d45bffd6b146c31
+  CompatibleCocos2d: e59499d78e762ce643fe05b178cf67e7f7f64926
 
 COCOAPODS: 0.38.2

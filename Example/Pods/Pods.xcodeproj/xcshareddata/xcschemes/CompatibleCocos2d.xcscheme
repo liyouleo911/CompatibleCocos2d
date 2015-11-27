@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2EF2CD5A5FEEC11B2741FA6F"
+               BlueprintIdentifier = "BED0997B06020BD16045FF8C"
                BuildableName = "libCompatibleCocos2d.a"
                BlueprintName = "CompatibleCocos2d"
                ReferencedContainer = "container:Pods.xcodeproj">

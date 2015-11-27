@@ -1,6 +1,6 @@
 {
   "name": "CompatibleCocos2d",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "A compatible verison of Cocos2d v2.1",
   "description": "A compatible verison of Cocos2d v2.1 for arm64",
   "homepage": "https://github.com/liyouleo911/CompatibleCocos2d",
@@ -10,13 +10,39 @@
   },
   "source": {
     "git": "https://github.com/liyouleo911/CompatibleCocos2d.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "6.0"
   },
   "requires_arc": false,
-  "source_files": "Pod/Classes/**/*",
-  "header_mappings_dir": "Pod/Classes/kazmath/include",
-  "libraries": "z"
+  "libraries": "z",
+  "subspecs": [
+    {
+      "name": "kazmath",
+      "source_files": "Pod/Classes/kazmath/**/*",
+      "header_mappings_dir": "Pod/Classes/kazmath/include",
+      "private_header_files": "Pod/Classes/kazmath/include/**/*.h"
+    },
+    {
+      "name": "cocos2d",
+      "source_files": "Pod/Classes/cocos2d/**/*",
+      "public_header_files": "Pod/Classes/cocos2d/**/*.h",
+      "dependencies": {
+        "CompatibleCocos2d/kazmath": [
+
+        ]
+      }
+    },
+    {
+      "name": "CocosDenshion",
+      "source_files": "Pod/Classes/CocosDenshion/*",
+      "private_header_files": "Pod/Classes/CocosDenshion/*.h",
+      "dependencies": {
+        "CompatibleCocos2d/cocos2d": [
+
+        ]
+      }
+    }
+  ]
 }
